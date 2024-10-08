@@ -1,0 +1,25 @@
+class Circle {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double computeArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+public class CircularRegionArea {
+    public static void main(String[] args) {
+        double ri = 5;  
+        double ro = 10; 
+
+        Circle innerCircle = new Circle(ri);
+        Circle outerCircle = new Circle(ro);
+
+        double shadedArea = outerCircle.computeArea() - innerCircle.computeArea();
+
+        System.out.println("The area of the circular region (shaded area) is: " + shadedArea);
+    }
+}
