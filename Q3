@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class CmToFeetInches {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double cm = scanner.nextDouble();
+
+        int feet = (int) (cm / 30.48);    // 1 foot = 30.48 cm
+        double inches = (cm / 2.54) % 12; // 1 inch = 2.54 cm
+
+        System.out.println(feet + " feet " + String.format("%.2f", inches) + " inches");
+
+        scanner.close();
+    }
+}
