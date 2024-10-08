@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class MiddleCharacter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String word = scanner.nextLine();
+
+        String middleChar = word.substring(word.length() / 2, word.length() / 2 + 1).toUpperCase();
+
+        System.out.println(middleChar);
+
+        scanner.close();
+    }
+}
