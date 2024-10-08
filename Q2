@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class FullNameFormat {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        String fullName = scanner.nextLine();
+
+
+        String[] nameParts = fullName.split(" ");
+        System.out.println(nameParts[2] + ", " + nameParts[0] + " " + nameParts[1].charAt(0) + ".");
+
+        scanner.close();
+    }
+}
